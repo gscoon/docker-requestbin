@@ -5,6 +5,7 @@ services:
   requestbin:
     # image: crccheck/requestbin
     build: .
+    container_name: requestbin
     depends_on:
       - redis
     environment:
