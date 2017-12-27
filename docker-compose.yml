@@ -10,6 +10,7 @@ services:
       - redis
     environment:
       REDIS_URL: redis://redis:6379/0
+      TTL_DAYS: ${TTL_DAYS:-30}
       # SESSION_SECRET_KEY
       # BUGSNAG_KEY
     ports:
